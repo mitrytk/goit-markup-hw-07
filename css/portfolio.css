@@ -250,7 +250,7 @@ img {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  transition-property: color, border-color, box-shadow;
+  transition-property: color, background-color, box-shadow;
 }
 .filter__button:hover, .filter__button:focus {
   color: var(--white-color);

@@ -30,7 +30,7 @@
     letter-spacing: 0.03em;
 
     @extend %transition-main;
-    transition-property: color, border-color, box-shadow;
+    transition-property: color, background-color, box-shadow;
 
     &:hover,
     &:focus {
