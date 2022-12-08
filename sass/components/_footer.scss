@@ -48,22 +48,6 @@
 .footer-social {
     @extend %social__list;
 
-    &__link {
-        @extend %social__link;
-        border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.1);
-
-        transition-property: fill, background-color;
-        transition-duration: 250ms;
-        transition-timing-function: var(--function-animation);
-
-
-        &:hover,
-        &:focus {
-            background-color: var(--brend-color);
-        }
-    }
-
     &__icon {
         @extend %social__icon;
         fill: var(--white-color);
@@ -77,7 +61,7 @@
     background-color: rgba(255, 255, 255, 0.1);
 
     @extend %transition-main;
-    transition-property: fill, border-color;
+    transition-property: fill, background-color;
 
 
     &:hover,

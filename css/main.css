@@ -464,16 +464,6 @@ img {
   color: #FFFFFF;
 }
 
-.footer-social__link {
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  transition-property: fill, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--function-animation);
-}
-.footer-social__link:hover, .footer-social__link:focus {
-  background-color: var(--brend-color);
-}
 .footer-social__icon {
   fill: var(--white-color);
 }
@@ -481,7 +471,7 @@ img {
 .footer-social__link {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  transition-property: fill, border-color;
+  transition-property: fill, background-color;
 }
 .footer-social__link:hover, .footer-social__link:focus {
   background-color: var(--brend-color);
