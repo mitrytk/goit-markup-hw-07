@@ -1,11 +1,13 @@
 .list {
     list-style: none;
 }
+
 .link {
     display: block;
     text-decoration: none;
     color: inherit;
 }
+
 .hide {
     position: absolute;
     width: 1px;
@@ -16,6 +18,7 @@
     border: 0;
     clip: rect(0 0 0 0);
 }
+
 .title {
     color: var(--text-title-color);
     font-family: 'Roboto', sans-serif;
@@ -24,18 +27,4 @@
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-}
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-.tumb {
-    position: relative;
-    overflow: hidden;
 }

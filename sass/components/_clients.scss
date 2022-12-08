@@ -1,6 +1,9 @@
 /* Постоянные клиенты */
 .clients {
 
+    @extend %section;
+    @extend %container;
+
     &__title {
         @extend %title;
         margin-bottom: 50px;
@@ -14,33 +17,43 @@
 
     &__link {
         @extend %link;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        width: 170px;
+        height: 92px;
+
         border: 1px solid var(--social-icon-color);
         border-radius: 4px;
-    
+
+        @extend %transition-main;
         transition-property: border-color;
-        transition-duration: 250ms;
-        transition-timing-function: var(--function-animation);
     }
 
     &__icon {
         display: block;
-        padding: 16px 32px;
+        width: 106px;
+        height: 60px;
+
         fill: var(--social-icon-color);
-    
+
+        @extend %transition-main;
         transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: var(--function-animation);
     }
 }
 
 .clients__link {
-    
+
     &:hover,
     &:focus {
 
         border-color: var(--brend-color);
     }
 }
+
 .clients__icon {
 
     .clients__link:hover &,

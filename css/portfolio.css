@@ -77,28 +77,28 @@ img {
   letter-spacing: 0.03em;
 }
 
-.container {
+.subscrbe__submit, .subscribe__input, .footer-social__link, .portfolio__desc, .portfolio__element, .filter__button, .nav-contacts__link, .nav-site__link {
+  transition-duration: 250ms;
+  transition-timing-function: var(--function-animation);
+}
+
+.footer__container, .portfolio, .header__container {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.section {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.tumb {
-  position: relative;
-  overflow: hidden;
-}
-
-.address__list, .portfolio__list, .filter, .nav-contacts, .nav-site__list, .social__list {
+.address__list, .portfolio__list, .filter, .nav-contacts, .nav-site__list, .footer-social {
   list-style: none;
 }
 
-.address__contact, .address__maps, .portfolio__element, .nav-contacts__link, .nav-site__link, .logo, .social__link {
+.address__contact, .address__maps, .portfolio__element, .nav-contacts__link, .nav-site__link, .logo, .footer-social__link {
   display: block;
   text-decoration: none;
   color: inherit;
@@ -113,47 +113,35 @@ img {
   font-size: 14px;
   letter-spacing: 0.02em;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--function-animation);
 }
 
 .footer__address {
   font-style: normal;
 }
 
-.button {
-  padding: 10px 32px;
-  color: #ffffff;
-  background-color: var(--brend-color);
-  border-radius: 4px;
-  border: none;
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--function-animation);
-}
-.button:hover, .button:focus {
-  color: var(--brend-color);
-  background-color: #ffffff;
-}
-
 /* Список иконок соц. сетей */
-.social__list {
+.footer-social {
   display: flex;
   justify-content: space-between;
 }
 
-.social__link {
+.footer-social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
 }
 
-.social__icon {
-  padding: 12px;
+.footer-social__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.portfolio__tumb {
+  position: relative;
+  overflow: hidden;
 }
 
 /* logo */
@@ -262,9 +250,7 @@ img {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  transition-property: color, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: var(--function-animation);
+  transition-property: color, border-color, box-shadow;
 }
 .filter__button:hover, .filter__button:focus {
   color: var(--white-color);
@@ -299,7 +285,6 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
-
 .portfolio__element:hover,
 .portfolio__element:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -307,8 +292,6 @@ img {
 
 .portfolio__element {
   transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: var(--function-animation);
 }
 .portfolio__element:hover, .portfolio__element:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -323,8 +306,6 @@ img {
   height: 294px;
   background-color: rgba(33, 149, 243, 0.9333333333);
   transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: var(--function-animation);
 }
 .portfolio__desc-text {
   width: 322px;
@@ -344,6 +325,7 @@ img {
 }
 .footer__container {
   display: flex;
+  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -358,7 +340,6 @@ img {
 }
 .footer__items:nth-child(2) {
   width: 206px;
-  padding-top: 12px;
 }
 .footer__title {
   margin-bottom: 20px;
@@ -370,18 +351,27 @@ img {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.footer__socicon {
-  fill: var(--white-color);
-}
 
-.footer__soclink {
+.footer-social__link {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: var(--function-animation);
 }
-.footer__soclink:hover, .footer__soclink:focus {
+.footer-social__link:hover, .footer-social__link:focus {
+  background-color: var(--brend-color);
+}
+.footer-social__icon {
+  fill: var(--white-color);
+}
+
+.footer-social__link {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-property: fill, border-color;
+}
+.footer-social__link:hover, .footer-social__link:focus {
   background-color: var(--brend-color);
 }
 
@@ -401,7 +391,6 @@ img {
 /* Подписаться на рассылку footer */
 .subscribe {
   margin-left: 93px;
-  padding-top: 12px;
 }
 .subscribe__container {
   display: flex;
@@ -419,8 +408,6 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   transition-property: outline, border-color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--function-animation);
 }
 .subscribe__input::placeholder {
   font-size: 16px;
@@ -452,8 +439,6 @@ img {
   line-height: 1.875;
   letter-spacing: 0.06em;
   transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: var(--function-animation);
 }
 .subscrbe__submit:hover, .subscrbe__submit:focus {
   box-shadow: none;

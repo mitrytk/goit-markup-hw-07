@@ -1,3 +1,19 @@
+%transition-main {
+    transition-duration: 250ms;
+    transition-timing-function: var(--function-animation);
+}
+
+%container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+%section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 %list {
     list-style: none;
@@ -8,6 +24,7 @@
     text-decoration: none;
     color: inherit;
 }
+
 %header-link {
     @extend %link;
     display: block;
@@ -21,10 +38,10 @@
     font-size: 14px;
     letter-spacing: 0.02em;
 
+    @extend %transition-main;
     transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: var(--function-animation);
 }
+
 %title {
     color: var(--text-title-color);
     font-family: 'Roboto', sans-serif;
@@ -38,41 +55,32 @@
 %address {
     font-style: normal;
 }
-.button {
-    padding: 10px 32px;
-    color: #ffffff;
-    background-color: var(--brend-color);
-    border-radius: 4px;
-    border: none;
-
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-
-    transition-property: color, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: var(--function-animation);
-
-    &:hover,
-    &:focus {
-        color: var(--brend-color);
-        background-color: #ffffff;
-    }
-}
 
 /* Список иконок соц. сетей */
-.social__list {
+%social__list {
     @extend %list;
     display: flex;
     justify-content: space-between;
 }
-.social__link {
+
+%social__link {
     @extend %link;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 44px;
     height: 44px;
     border-radius: 50%;
 }
-.social__icon {
-    padding: 12px;
+
+%social__icon {
+    width: 20px;
+    height: 20px;
+}
+
+%tumb {
+    position: relative;
+    overflow: hidden;
 }

@@ -4,6 +4,8 @@
 
 
     &__container {
+        @extend %container;
+
         display: flex;
         align-items: center;
     }
@@ -13,8 +15,9 @@
 .header {
     background-color: #FFFFFF;
     line-height: 1.14;
-    
+
 }
+
 .nav-site {
     display: flex;
     align-items: center;
@@ -26,7 +29,7 @@
         margin-left: 93px;
     }
 
-    &__items + &__items{
+    &__items+&__items {
         margin-left: 50px;
     }
 
@@ -35,6 +38,7 @@
         @extend %header-link;
     }
 }
+
 .nav-site__link {
 
     &:hover,
@@ -45,11 +49,11 @@
 
 .nav-site__link--active {
 
-        color: var(--brend-color);
-        position: relative;
+    color: var(--brend-color);
+    position: relative;
 
     &::after {
-        content:"";
+        content: "";
 
         position: absolute;
         bottom: -1px;
@@ -61,7 +65,7 @@
         background-color: var(--brend-color);
     }
 }
-    
+
 
 /* Контакты */
 .nav-contacts {
@@ -70,7 +74,7 @@
     align-items: center;
     margin-left: auto;
 
-    &__items + &__items {
+    &__items+&__items {
         margin-left: 30px;
     }
 
@@ -86,10 +90,11 @@
         fill: currentColor;
     }
 }
+
 .nav-contacts__link {
 
     &:hover,
-    &:focus  {
-    color: var(--brend-color);
+    &:focus {
+        color: var(--brend-color);
     }
 }

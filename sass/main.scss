@@ -1,8 +1,8 @@
-
 //Утилиты
 @import './utils/variables';
 @import './utils/reset-styles';
 @import './utils/vs';
+@import './utils/mixins';
 @import './utils/placeholders';
 
 //header
@@ -21,4 +21,3 @@
 
 //modal
 @import './components/modal-feedback';
-
