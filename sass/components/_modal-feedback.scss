@@ -173,8 +173,22 @@
 }
 
 .feedback__submit {
+    padding: 10px 32px;
+    color: #ffffff;
+    background-color: var(--brend-color);
+    border-radius: 4px;
+    border: none;
+
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
     margin: 0 auto;
     padding: 10px 52px;
+
+    @extend %transition-main;
+    transition-property: box-shadow, background-color, color;
 
     &:hover,
     &:focus {
@@ -215,7 +229,7 @@
     border-radius: 2px;
 
     @extend %transition-main;
-    transition-property: border, border-color, background-image;
+    transition-property: border, background-color, background-image;
 
     .checkbox__input:checked+& {
         border: inherit;

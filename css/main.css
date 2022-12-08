@@ -77,7 +77,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.checkbox__icon, .feedback__input, .feedback__icon, .modal__close-button, .modal, .backdrop, .subscrbe__submit, .subscribe__input, .footer-social__link, .clients__icon, .clients__link, .team-cart__link, .team-cart__icon, .hero__button, .nav-contacts__link, .nav-site__link {
+.checkbox__icon, .feedback__submit, .feedback__input, .feedback__icon, .modal__close-button, .modal, .backdrop, .subscrbe__submit, .subscribe__input, .footer-social__link, .clients__icon, .clients__link, .team-cart__link, .team-cart__icon, .hero__button, .nav-contacts__link, .nav-site__link {
   transition-duration: 250ms;
   transition-timing-function: var(--function-animation);
 }
@@ -680,8 +680,18 @@ img {
 }
 
 .feedback__submit {
+  padding: 10px 32px;
+  color: #ffffff;
+  background-color: var(--brend-color);
+  border-radius: 4px;
+  border: none;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
   margin: 0 auto;
   padding: 10px 52px;
+  transition-property: box-shadow, background-color, color;
 }
 .feedback__submit:hover, .feedback__submit:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -714,7 +724,7 @@ img {
   height: 15px;
   border: 2px solid var(--text-title-color);
   border-radius: 2px;
-  transition-property: border, border-color, background-image;
+  transition-property: border, background-color, background-image;
 }
 .checkbox__input:checked + .checkbox__icon {
   border: inherit;
