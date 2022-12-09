@@ -329,16 +329,13 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer__logo--dark {
-  color: var(--footer-text-color);
-}
 .footer__address {
   margin-top: 20px;
 }
-.footer__items + .footer__items {
+.footer__item + .footer__item {
   margin-left: 70px;
 }
-.footer__items:nth-child(2) {
+.footer__item:nth-child(2) {
   width: 206px;
 }
 .footer__title {
@@ -376,6 +373,10 @@ img {
 }
 .address__contact {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.logo--dark {
+  color: var(--footer-text-color);
 }
 
 /* Подписаться на рассылку footer */

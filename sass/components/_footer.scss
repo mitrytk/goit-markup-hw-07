@@ -13,20 +13,16 @@
         padding-bottom: 60px;
     }
 
-    &__logo--dark {
-        color: var(--footer-text-color);
-    }
-
     &__address {
         @extend %address;
         margin-top: 20px;
     }
 
-    &__items+&__items {
+    &__item+&__item {
         margin-left: 70px;
     }
 
-    &__items:nth-child(2) {
+    &__item:nth-child(2) {
         width: 206px;
     }
 
@@ -92,6 +88,10 @@
         @extend %link;
         color: rgba(255, 255, 255, 0.6);
     }
+}
+
+.logo--dark {
+    color: var(--footer-text-color);
 }
 
 /* Подписаться на рассылку footer */
